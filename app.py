@@ -8,9 +8,9 @@ def hello_world():
     today = todays_date()
     return render_template ("index.html", the_date = today)
     
-@app.route("/about")
+@app.route("/resume")
 def about_me():
-    return render_template("about_me.html")
+    return render_template("resume.html")
     
 def todays_date():
     today = date.today()
